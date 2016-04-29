@@ -59,7 +59,7 @@ bool EMEnrichingFilterAlgo::filter(const edm::Event& iEvent, const edm::EventSet
 
   Handle<reco::GenParticleCollection> genParsHandle;
   //~ iEvent.getByLabel(genParSource_,genParsHandle);
-  iEvent.getByToken(token_,genParsHande);
+  iEvent.getByToken(token_,genParsHandle);
   reco::GenParticleCollection genPars=*genParsHandle;
 
   //bending of traj. of charged particles under influence of B-field
